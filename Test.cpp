@@ -1,12 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Demo {
-    int a;
-    std::cout << a << endl;
-    int main()
+int main()
+{
+    string str = "Abhay Gautam";
+
+    for(auto i : str)
     {
-        std::cout << a << endl;
-        return 0;
+        cout << i << " ";
     }
-};
+    cout << endl;
+}
