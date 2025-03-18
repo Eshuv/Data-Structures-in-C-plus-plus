@@ -3,22 +3,14 @@ using namespace std;
 
 int fibo(int n)
 {
-    if(n == 0)
+    if(n == 1 || n == 0)
     {
-        return 0;
+        return n;
     }
-    if(n == 1)
-    {
-        return 1;
-    }
-
-    int res = fibo(n-1) + fibo(n-2); 
-
-    return res;
+    return fibo(n-1) + fibo(n-2);
 }
 
 int main()
 {
-    int res = fibo(50);
-    cout << res << endl;
+    cout << fibo(10) << endl;
 }
